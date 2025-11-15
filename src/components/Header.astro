@@ -47,6 +47,7 @@ import logo from '../assets/LOGO.png';
                             font-weight: 700; /* cambia a 400/700 según prefieras */
                             font-style: normal;
                             font-size: 16px;
+                            min-width: 375px;
                     }
 
         :root{
@@ -151,6 +152,7 @@ import logo from '../assets/LOGO.png';
 
         /* Mobile styles */
         @media (max-width: 768px){
+            .font-header { min-width: 100vw; }
             /* Mobile */
             .nav-left{ order: 1; }
             .nav-right{ order: 3; }
@@ -162,6 +164,12 @@ import logo from '../assets/LOGO.png';
             .mobile-menu.open{ display: block; }
             .mobile-menu ul{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.25rem; }
             .mobile-menu a{ color: var(--white); text-decoration:none; padding:0.65rem 0.25rem; display:block; font-size: 1rem; }
+        }
+
+        @media (max-width: 400px){
+            .font-header { min-width: 0; width: 100vw; }
+            .logo{ height: 36px; }
+            .nav-links a{ font-size: 1rem; }
         }
 
         /* Tablet: show inline links with adjusted sizes */

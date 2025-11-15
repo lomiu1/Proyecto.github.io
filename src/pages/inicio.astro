@@ -76,6 +76,7 @@ import thumbC from '../assets/cuatro.png';
 		margin: 2.5rem auto 2rem auto;
 		padding: 0 1.5rem;
 		text-align: center;
+		min-width: 375px;
 	}
 	.intro-title {
 		font-family: 'Outfit', sans-serif;
@@ -101,10 +102,15 @@ import thumbC from '../assets/cuatro.png';
 		text-align: justify;
 	}
 	@media (max-width: 700px) {
+		.intro-block { min-width: 100vw; }
 		.intro-title { font-size: 1.5rem; }
 		.intro-subtitle { font-size: 1.15rem; }
 		.intro-block { padding: 0 0.5rem; }
 		.intro-block p { font-size: 1rem; }
+	}
+	@media (max-width: 400px) {
+		.intro-block { min-width: 0; width: 100vw; padding: 0.2rem; }
+		.intro-title { font-size: 1.1rem; }
 	}
 </style>
 
@@ -132,5 +138,9 @@ import thumbC from '../assets/cuatro.png';
 		.about-multimedia{ grid-template-columns:1fr; }
 		.media-main{ height:300px }
 		.media-thumb{ display:none }
+	}
+	@media (max-width:400px){
+		.about-multimedia{ padding:0 0.2rem; }
+		.media-main{ height:120px; }
 	}
 </style>

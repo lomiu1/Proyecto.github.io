@@ -112,6 +112,7 @@ import Ofi from '../assets/Ofi.png';
     position: relative;
     overflow: hidden;
     background: #000;
+    min-width: 375px;
   }
   .tienda-slideshow {
     width: 100%;
@@ -166,11 +167,17 @@ import Ofi from '../assets/Ofi.png';
     letter-spacing: 1px;
   }
   @media (max-width: 900px) {
-    .tienda-hero { height: 45vh; min-height: 220px; }
+    .tienda-hero { min-width: 100vw; }
     .tienda-arrow.left { left: 1rem; right: auto; font-size: 1.7rem; padding: 0.5rem 0.9rem; }
     .tienda-arrow.right { right: 1rem; left: auto; font-size: 1.7rem; padding: 0.5rem 0.9rem; }
     .tienda-hero-text h1 { font-size: 2rem; }
     .beneficios-cursos { flex-direction: column; align-items: center; gap: 1.5rem; }
+  }
+  @media (max-width: 400px) {
+    .tienda-hero { min-width: 0; width: 100vw; }
+    .tienda-hero-text h1 { font-size: 1.1rem; }
+    .course-image { height: 120px; }
+    .course-card h3 { font-size: 1rem; }
   }
   
   /* Beneficios debajo de otros cursos */
@@ -246,11 +253,17 @@ import Ofi from '../assets/Ofi.png';
   .gym-content p { margin-top: 1rem; font-family: 'Quicksand', sans-serif; color: #666; }
 
   @media (max-width: 900px) {
-    .tienda-hero { height: 45vh; min-height: 220px; }
+    .tienda-hero { min-width: 100vw; }
     .tienda-arrow { font-size: 1.7rem; left: 1rem; right: 1rem; padding: 0.5rem 0.9rem; }
     .tienda-hero-text h1 { font-size: 2rem; }
     .centros-grid { grid-template-columns: 1fr; }
     .centro-circle { width: 150px; height: 150px; }
+  }
+  @media (max-width: 400px) {
+    .tienda-hero { min-width: 0; width: 100vw; }
+    .tienda-hero-text h1 { font-size: 1.1rem; }
+    .course-image { height: 120px; }
+    .course-card h3 { font-size: 1rem; }
   }
 </style>
 <script>

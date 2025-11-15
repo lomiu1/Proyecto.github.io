@@ -13,6 +13,7 @@
   margin: 5rem auto;
   text-align: center;
   padding: 2rem;
+  min-width: 375px;
 }
 .notfound-main h1 {
   font-size: 5rem;
@@ -36,5 +37,12 @@
 }
 .notfound-link:hover {
   background: #0077aa;
+}
+@media (max-width: 700px) {
+  .notfound-main { min-width: 100vw; padding: 1rem; }
+}
+@media (max-width: 400px) {
+  .notfound-main { min-width: 0; width: 100vw; padding: 0.2rem; }
+  .notfound-main h1 { font-size: 2rem; }
 }
 </style>

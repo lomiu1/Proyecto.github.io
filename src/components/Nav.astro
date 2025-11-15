@@ -28,7 +28,7 @@ import cinco from '../assets/cinco.jpg';
 </nav>
 
 <style>
-    .hero{ width:100%; height:70vh; min-height:320px; }
+    .hero{ width:100%; height:70vh; min-height:320px; min-width:375px; }
     .hero-inner{
         display: flex;
         width: 100%;
@@ -62,13 +62,18 @@ import cinco from '../assets/cinco.jpg';
 
     /* Responsive: en pantallas pequeñas apilamos y centramos */
     @media (max-width: 900px){
-        .hero{ height: 70vh; min-height: 360px; }
+        .hero{ height: 70vh; min-height: 360px; min-width:100vw; }
         .hero-inner{ flex-direction: column; }
         .hero-left{ flex: 0 0 auto; width:100%; height: 65%; }
         .hero-left img{ height:100%; }
         .hero-right{ flex: 0 0 auto; width:100%; height: 35%; }
         .hero-title{ font-size: 1.6rem; }
         .hero-subtitle{ font-size: 0.95rem; }
+    }
+    @media (max-width: 400px){
+        .hero{ min-width:0; width:100vw; }
+        .hero-title{ font-size: 1.1rem; }
+        .hero-subtitle{ font-size: 0.9rem; }
     }
 </style>
 
