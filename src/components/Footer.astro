@@ -109,7 +109,9 @@ import coffeeIcon from '../assets/coffee.png';
       color: #ffffff;
       padding: 3rem 1rem;
       margin-top: 3rem;
-      min-width: 375px;
+      min-width: 0;
+      width: 100vw;
+      box-sizing: border-box;
     }
 
     .footer-content {
@@ -118,6 +120,9 @@ import coffeeIcon from '../assets/coffee.png';
       gap: 2rem;
       max-width: 1400px;
       margin: 0 auto 2rem;
+      width: 100vw;
+      min-width: 0;
+      box-sizing: border-box;
     }
 
     .footer-section {
@@ -271,6 +276,8 @@ import coffeeIcon from '../assets/coffee.png';
 
     /* Responsive */
     @media (max-width: 768px) {
+      .footer { width: 100vw; min-width: 0; }
+      .footer-content { width: 100vw; min-width: 0; }
       .footer { min-width: 100vw; }
       .footer-content {
         grid-template-columns: 1fr;
@@ -294,7 +301,7 @@ import coffeeIcon from '../assets/coffee.png';
     }
 
     @media (max-width: 400px) {
-      .footer { min-width: 0; width: 100vw; padding: 1.5rem 0.2rem; }
+      .footer { width: 100vw; min-width: 0; }
       .footer-logo { max-width: 80px; }
       .footer-section h3 { font-size: 0.9rem; }
     }

@@ -16,7 +16,7 @@
 	</section>
     <style>
 
-        .newsletter-section{ padding: 2.5rem 1rem; background: #fff; min-width: 375px; }
+        .newsletter-section{ padding: 2.5rem 1rem; background: #fff; min-width: 0; width: 100vw; box-sizing: border-box; }
         .newsletter-section h3{ text-align:center; color: #2f6a77; font-family:'Outfit',sans-serif; margin-bottom:1.4rem; }
         .newsletter-card{ max-width:1100px; margin:0 auto; background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 8px 28px rgba(10,20,30,0.06); display:flex; gap:1rem; align-items:center; }
         .newsletter-left{ flex:1 }
@@ -29,11 +29,11 @@
             .newsletter-right{ justify-content:center }
         }
         @media (max-width:700px){
-            .newsletter-section{ min-width: 100vw; padding: 0.5rem; }
+            .newsletter-section{ width: 100vw; min-width: 0; padding: 0.5rem; }
             .newsletter-card{ padding: 1rem; }
         }
         @media (max-width:400px){
-            .newsletter-section{ min-width: 0; width: 100vw; padding: 0.2rem; }
+            .newsletter-section{ width: 100vw; min-width: 0; padding: 0.2rem; }
             .newsletter-card{ padding: 0.5rem; }
             .newsletter-right input{ min-width: 120px; }
         }

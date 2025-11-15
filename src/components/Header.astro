@@ -88,6 +88,9 @@ import logo from '../assets/LOGO.png';
             margin: 0 auto;
             padding: 0.5rem;
             height: 70px;
+            width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
         }
 
         .nav-left, .nav-right{
@@ -152,8 +155,8 @@ import logo from '../assets/LOGO.png';
 
         /* Mobile styles */
         @media (max-width: 768px){
-            .font-header { min-width: 100vw; }
-            /* Mobile */
+            .font-header { width: 100vw; min-width: 0; }
+            .nav { width: 100vw; min-width: 0; }
             .nav-left{ order: 1; }
             .nav-right{ order: 3; }
             .nav-links{ display: none; }
@@ -167,7 +170,8 @@ import logo from '../assets/LOGO.png';
         }
 
         @media (max-width: 400px){
-            .font-header { min-width: 0; width: 100vw; }
+            .font-header { width: 100vw; min-width: 0; }
+            .nav { width: 100vw; min-width: 0; }
             .logo{ height: 36px; }
             .nav-links a{ font-size: 1rem; }
         }

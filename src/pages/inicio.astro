@@ -102,7 +102,7 @@ import thumbC from '../assets/cuatro.png';
 		text-align: justify;
 	}
 	@media (max-width: 700px) {
-		.intro-block { min-width: 100vw; }
+		.intro-block { min-width: 0; width: 100vw; box-sizing: border-box; }
 		.intro-title { font-size: 1.5rem; }
 		.intro-subtitle { font-size: 1.15rem; }
 		.intro-block { padding: 0 0.5rem; }
@@ -135,12 +135,12 @@ import thumbC from '../assets/cuatro.png';
 	.media-thumb.bottom{ right:-10px; bottom:-40px; width:220px; height:120px }
 
 	@media (max-width:900px){
-		.about-multimedia{ grid-template-columns:1fr; }
+		.about-multimedia{ grid-template-columns:1fr; width: 100vw; min-width: 0; box-sizing: border-box; }
 		.media-main{ height:300px }
 		.media-thumb{ display:none }
 	}
 	@media (max-width:400px){
-		.about-multimedia{ padding:0 0.2rem; }
+		.about-multimedia{ padding:0 0.2rem; width: 100vw; min-width: 0; box-sizing: border-box; }
 		.media-main{ height:120px; }
 	}
 </style>

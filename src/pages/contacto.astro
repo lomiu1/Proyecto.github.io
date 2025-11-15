@@ -46,7 +46,7 @@ import location from '../assets/location.png';
 	</main>
 
 	<style>
-		.contact-page{ max-width:1100px; margin:2.5rem auto; padding:0 1rem; min-width:375px; }
+		.contact-page{ max-width:1100px; margin:2.5rem auto; padding:0 1rem; min-width:0; width:100vw; box-sizing: border-box; }
 		.contact-hero{ text-align:center; margin-bottom:1.5rem; }
 		.contact-hero h1{ font-family: "Outfit", sans-serif; font-size:2.25rem; margin:0 0 .5rem; }
 		.contact-hero p{ color:#556; margin:0; }
@@ -63,9 +63,9 @@ import location from '../assets/location.png';
 		.contact-form input, .contact-form textarea{ width:100%; padding:.5rem .6rem; border:1px solid #d7e3ef; border-radius:6px; }
 		.btn{ background:#1696eb; color:white; border:none; padding:.6rem 1rem; border-radius:6px; cursor:pointer; }
 		@media (max-width:800px){ .contact-grid{ grid-template-columns: 1fr; } }
-		@media (max-width:700px){ .contact-page{ min-width:100vw; padding:0.5rem; } }
+		@media (max-width:700px){ .contact-page{ min-width:0; width:100vw; padding:0.5rem; box-sizing: border-box; } }
 		@media (max-width:400px){
-			.contact-page{ min-width:0; width:100vw; padding:0.2rem; }
+			.contact-page{ min-width:0; width:100vw; padding:0.2rem; box-sizing: border-box; }
 			.contact-hero h1{ font-size: 1.1rem; }
 		}
 	</style>
