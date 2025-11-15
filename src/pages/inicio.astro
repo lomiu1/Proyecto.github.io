@@ -52,9 +52,6 @@ import thumbC from '../assets/cuatro.png';
 			<div class="media-main" style={`background-image:url(${aboutMain.src})`}>
 				<button class="play">▶</button>
 			</div>
-			<div class="media-thumb top-left" style={`background-image:url(${thumbA.src})`}></div>
-			<div class="media-thumb top-right" style={`background-image:url(${thumbB.src})`}></div>
-			<div class="media-thumb bottom" style={`background-image:url(${thumbC.src})`}></div>
 		</div>
 	</section>
 
@@ -163,11 +160,7 @@ import thumbC from '../assets/cuatro.png';
 	.about-media{ position:relative; height:520px; overflow: hidden;}
 	.media-main{ width:100%; height:420px; background-size:cover; background-position:center; border:6px solid rgba(47,106,119,0.9); box-shadow:0 6px 18px rgba(0,0,0,0.08); border-radius:6px; position:relative }
 	.play{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); background:rgba(255,255,255,0.2); color:white; border:none; font-size:2rem; width:84px; height:84px; border-radius:50% }
-	.media-thumb{ position:absolute; width:140px; height:90px; background-size:cover; background-position:center; border:6px solid rgba(47,106,119,0.9); box-shadow:0 6px 18px rgba(0,0,0,0.06); }
-	.media-thumb.top-left{ left:-60px; top:-40px }
-	.media-thumb.top-right{ right:-20px; top:-60px; width:140px; height:90px }
-	.media-thumb.bottom{ right:-10px; bottom:-40px; width:220px; height:120px }
-
+	
 	/* Tablet: 768px - 1024px */
 	@media (min-width: 768px) and (max-width: 1024px) {
 		.hero-banner{ height: 42vh; min-height: 280px; }
@@ -177,10 +170,6 @@ import thumbC from '../assets/cuatro.png';
 		.about-multimedia{ max-width: 100%; margin: 2.5rem auto; padding: 0 0.8rem; grid-template-columns:1fr 380px; gap:1.5rem; width: 100%; box-sizing: border-box; align-items: start; }
 		.about-media{ position:relative; height:370px; overflow: hidden; }
 		.media-main{ height:300px }
-		.media-thumb{ display:block; width:100px; height:65px; }
-		.media-thumb.top-left{ left:-35px; top:-25px }
-		.media-thumb.top-right{ right:-15px; top:-35px; width:100px; height:65px }
-		.media-thumb.bottom{ right:-5px; bottom:-25px; width:150px; height:85px }
 		.about-text h3{ font-size: 1.6rem; }
 		.about-text p { font-size: 0.95rem; }
 		.about-list li { font-size: 0.95rem; }
