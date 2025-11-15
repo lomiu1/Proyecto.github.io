@@ -165,8 +165,8 @@ import logo from '../assets/LOGO.png';
 
         /* Tablet: 768px - 1024px */
         @media (min-width: 768px) and (max-width: 1024px){
-            .font-header { width: 100vw; min-width: 0; }
-            .nav { width: 100vw; min-width: 0; padding: 0.4rem 0.5rem; }
+            .font-header { width: 100%; box-sizing: border-box; }
+            .nav { width: 100%; box-sizing: border-box; padding: 0.4rem 0.5rem; }
             .nav-links{ display: flex; gap: 1.5rem; }
             .menu-btn{ display: none; }
             .logo{ height: 50px; width: auto; }
@@ -176,8 +176,8 @@ import logo from '../assets/LOGO.png';
 
         /* Mobile large (phablet): 600px - 767px */
         @media (min-width: 600px) and (max-width: 767px){
-            .font-header { width: 100vw; min-width: 0; }
-            .nav { width: 100vw; min-width: 0; padding: 0.3rem 0.5rem; height: 60px; }
+            .font-header { width: 100%; box-sizing: border-box; }
+            .nav { width: 100%; box-sizing: border-box; padding: 0.3rem 0.5rem; height: 60px; }
             .nav-left{ order: 1; }
             .nav-right{ order: 3; }
             .nav-links{ display: none; }
@@ -192,8 +192,8 @@ import logo from '../assets/LOGO.png';
 
         /* Mobile small: 375px - 599px */
         @media (min-width: 375px) and (max-width: 599px){
-            .font-header { width: 100vw; min-width: 0; box-sizing: border-box; }
-            .nav { width: 100vw; min-width: 0; padding: 0.25rem 0.4rem; height: 55px; box-sizing: border-box; }
+            .font-header { width: 100%; box-sizing: border-box; }
+            .nav { width: 100%; box-sizing: border-box; padding: 0.25rem 0.4rem; height: 55px; }
             .nav-left{ order: 1; }
             .nav-right{ order: 3; }
             .nav-links{ display: none; }

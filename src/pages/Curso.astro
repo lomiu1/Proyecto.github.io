@@ -167,14 +167,14 @@ import Ofi from '../assets/Ofi.png';
     letter-spacing: 1px;
   }
   @media (max-width: 900px) {
-    .tienda-hero { min-width: 100vw; }
+    .tienda-hero { min-width: 100%; }
     .tienda-arrow.left { left: 1rem; right: auto; font-size: 1.7rem; padding: 0.5rem 0.9rem; }
     .tienda-arrow.right { right: 1rem; left: auto; font-size: 1.7rem; padding: 0.5rem 0.9rem; }
     .tienda-hero-text h1 { font-size: 2rem; }
     .beneficios-cursos { flex-direction: column; align-items: center; gap: 1.5rem; }
   }
   @media (max-width: 400px) {
-    .tienda-hero { min-width: 0; width: 100vw; }
+    .tienda-hero { min-width: 0; width: 100%; }
     .tienda-hero-text h1 { font-size: 1.1rem; }
     .course-image { height: 120px; }
     .course-card h3 { font-size: 1rem; }
@@ -261,7 +261,7 @@ import Ofi from '../assets/Ofi.png';
 
   /* Tablet: 768px - 1024px */
   @media (min-width: 768px) and (max-width: 1024px) {
-    .tienda-hero { width: 100vw; min-width: 0; height: 60vh; min-height: 340px; }
+    .tienda-hero { width: 100%; box-sizing: border-box; height: 60vh; min-height: 340px; }
     .tienda-arrow.left { left: 1.2rem; font-size: 1.8rem; padding: 0.5rem 0.8rem; }
     .tienda-arrow.right { right: 1.2rem; font-size: 1.8rem; padding: 0.5rem 0.8rem; }
     .tienda-hero-text h1 { font-size: 2.5rem; }
@@ -269,21 +269,21 @@ import Ofi from '../assets/Ofi.png';
     .beneficio { min-width: 200px; max-width: 300px; padding: 0.9rem; }
     .beneficio h4 { font-size: 1rem; }
     .beneficio p { font-size: 0.9rem; }
-    .courses-section { width: 100vw; min-width: 0; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; padding: 0 0.8rem; margin: 2.5rem auto; }
+    .courses-section { width: 100%; box-sizing: border-box; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; padding: 0 0.8rem; margin: 2.5rem auto; }
     .course-image { height: 180px; }
     .course-card h3 { font-size: 1.2rem; }
     .other-bg { height: 35vh; min-height: 250px; }
     .other-bg h2 { font-size: 2rem; }
     .centros-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
     .centro-circle { width: 140px; height: 140px; font-size: 1.1rem; }
-    .gym-section { width: 100vw; min-width: 0; padding: 0 0.8rem; margin: 3rem auto; }
+    .gym-section { width: 100%; box-sizing: border-box; padding: 0 0.8rem; margin: 3rem auto; }
     .gym-section h2 { font-size: 1.8rem; }
     .gym-image { max-width: 100%; }
   }
 
   /* Mobile large (phablet): 600px - 767px */
   @media (min-width: 600px) and (max-width: 767px) {
-    .tienda-hero { width: 100vw; min-width: 0; height: 50vh; min-height: 300px; }
+    .tienda-hero { width: 100%; box-sizing: border-box; height: 50vh; min-height: 300px; }
     .tienda-arrow.left { left: 0.8rem; font-size: 1.5rem; padding: 0.4rem 0.7rem; }
     .tienda-arrow.right { right: 0.8rem; font-size: 1.5rem; padding: 0.4rem 0.7rem; }
     .tienda-hero-text h1 { font-size: 2rem; }
@@ -291,7 +291,7 @@ import Ofi from '../assets/Ofi.png';
     .beneficio { min-width: 100%; max-width: 100%; padding: 0.8rem; }
     .beneficio h4 { font-size: 0.95rem; }
     .beneficio p { font-size: 0.85rem; }
-    .courses-section { width: 100vw; min-width: 0; grid-template-columns: 1fr; gap: 1.2rem; padding: 0 0.6rem; margin: 2rem auto; }
+    .courses-section { width: 100%; box-sizing: border-box; grid-template-columns: 1fr; gap: 1.2rem; padding: 0 0.6rem; margin: 2rem auto; }
     .course-card { overflow: hidden; }
     .course-image { height: 160px; }
     .course-card h3 { font-size: 1.1rem; margin: 0.8rem 0.8rem 0.4rem; }
@@ -304,7 +304,7 @@ import Ofi from '../assets/Ofi.png';
     .centros-section h2 { font-size: 1.6rem; margin-bottom: 1.5rem; }
     .centros-grid { grid-template-columns: 1fr; gap: 1rem; max-width: 100%; }
     .centro-circle { width: 120px; height: 120px; font-size: 1rem; }
-    .gym-section { width: 100vw; min-width: 0; padding: 0 0.6rem; margin: 2.5rem auto; }
+    .gym-section { width: 100%; box-sizing: border-box; padding: 0 0.6rem; margin: 2.5rem auto; }
     .gym-section h2 { font-size: 1.5rem; margin-bottom: 1.2rem; }
     .gym-image { max-width: 100%; border-radius: 6px; }
     .gym-content p { font-size: 0.95rem; margin-top: 0.8rem; }
@@ -312,7 +312,7 @@ import Ofi from '../assets/Ofi.png';
 
   /* Mobile small: 375px - 599px */
   @media (min-width: 375px) and (max-width: 599px) {
-    .tienda-hero { width: 100vw; min-width: 0; height: 45vh; min-height: 260px; box-sizing: border-box; }
+    .tienda-hero { width: 100%; box-sizing: border-box; height: 45vh; min-height: 260px; }
     .tienda-arrow.left { left: 0.6rem; font-size: 1.3rem; padding: 0.3rem 0.6rem; }
     .tienda-arrow.right { right: 0.6rem; font-size: 1.3rem; padding: 0.3rem 0.6rem; }
     .tienda-hero-text h1 { font-size: 1.4rem; text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
@@ -321,7 +321,7 @@ import Ofi from '../assets/Ofi.png';
     .beneficio img { width: 40px; height: 40px; margin-top: 0; }
     .beneficio h4 { font-size: 0.9rem; margin: 0 0 0.25rem 0; }
     .beneficio p { font-size: 0.8rem; }
-    .courses-section { width: 100vw; min-width: 0; grid-template-columns: 1fr; gap: 1rem; padding: 0 0.5rem; margin: 1.5rem auto; box-sizing: border-box; }
+    .courses-section { width: 100%; box-sizing: border-box; grid-template-columns: 1fr; gap: 1rem; padding: 0 0.5rem; margin: 1.5rem auto; }
     .course-card { overflow: hidden; }
     .course-image { height: 140px; }
     .course-card h3 { font-size: 1rem; margin: 0.7rem 0.7rem 0.3rem; }
@@ -334,7 +334,7 @@ import Ofi from '../assets/Ofi.png';
     .centros-section h2 { font-size: 1.3rem; margin-bottom: 1.2rem; }
     .centros-grid { grid-template-columns: 1fr; gap: 0.8rem; max-width: 100%; padding: 0 0.3rem; box-sizing: border-box; }
     .centro-circle { width: 100px; height: 100px; font-size: 0.9rem; }
-    .gym-section { width: 100vw; min-width: 0; padding: 0 0.5rem; margin: 2rem auto; box-sizing: border-box; }
+    .gym-section { width: 100%; box-sizing: border-box; padding: 0 0.5rem; margin: 2rem auto; }
     .gym-section h2 { font-size: 1.3rem; margin-bottom: 1rem; }
     .gym-image { width: 100%; max-width: 100%; border-radius: 6px; }
     .gym-content p { font-size: 0.9rem; margin-top: 0.7rem; }
